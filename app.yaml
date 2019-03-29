@@ -1,0 +1,13 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Mar 29 15:54:22 2019
+
+@author: hp
+"""
+
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT main:app
+
+runtime_config:
+    python_version: 3
